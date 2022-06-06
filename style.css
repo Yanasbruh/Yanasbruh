@@ -170,8 +170,8 @@ body {
 }
 
 .tools img {
-  width: 200px;
-  height: 200px;
+  width: 100px;
+  height: 100px;
   margin: 10px 25px;
 }
 
@@ -275,5 +275,16 @@ body {
   .skills .gambar3 img {
     width: 75px;
     height: 65px;
+  }
+  .tools img {
+    width: 75px;
+    height: 75px;
+    margin: 10px 25px;
+  }
+  .inner-header {
+    height: 5vh;
+    width: 100%;
+    margin: 0;
+    padding: 0;
   }
 }

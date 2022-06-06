@@ -139,17 +139,36 @@ body {
 }
 
 .skills img {
-  width: 100px;
-  height: 100px;
+  width: 150px;
+  height: 150px;
   margin: 20px 35px;
 }
 
-.skills .gambar3 img {
-  width: 100px;
-  height: 95px;
+.skills p {
+  font-size: 1.5rem;
+  color: var(--thirdColor);
+  text-align: center;
 }
 
-.skills p {
+.sekil {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.sekil img {
+  width: 150px;
+  height: 150px;
+  margin: 20px 35px;
+}
+
+.sekil .gambar3 img {
+  width: 150px;
+  height: 145px;
+}
+
+.sekil p {
   font-size: 1.5rem;
   color: var(--thirdColor);
   text-align: center;
@@ -267,14 +286,25 @@ body {
     text-align: center;
     font-size: 15px;
   }
+  .skills {
+    justify-content: space-evenly;
+  }
+  .sekil {
+    justify-content: space-evenly;
+  }
   .skills img {
     width: 75px;
     height: 75px;
     margin: 0;
   }
-  .skills .gambar3 img {
+  .sekil .gambar3 img {
     width: 75px;
     height: 65px;
+  }
+  .sekil img {
+    width: 75px;
+    height: 75px;
+    margin: 0;
   }
   .tools img {
     width: 75px;

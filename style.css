@@ -1,0 +1,279 @@
+:root {
+  --mainColor: #02283e;
+  --secondColor: #0f547b;
+  --thirdColor: #569ec7;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+body {
+  background-color: var(--mainColor);
+}
+
+.header {
+  position: relative;
+  text-align: center;
+}
+
+.inner-header {
+  height: 65vh;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.tron p {
+  opacity: 0;
+}
+
+.jumbo {
+  margin-top: 30px;
+  display: flex;
+}
+
+.jumbo img {
+  border-radius: 50%;
+  width: 40vh;
+  margin: 0px auto;
+}
+
+.caption h1 {
+  color: var(--thirdColor);
+  text-align: center;
+  margin-top: 9px;
+  font-size: 3rem;
+}
+
+.caption p {
+  color: white;
+  text-align: center;
+  font-size: 2rem;
+  letter-spacing: 1px;
+}
+
+.project h1 {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  font-size: 3rem;
+  text-align: center;
+  color: var(--thirdColor);
+}
+
+.gambar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translateZ(20px);
+}
+
+.gambar img {
+  width: 60%;
+  transform-style: preserve-3d;
+  transform: perspective(300px);
+}
+
+.gambar p {
+  margin-bottom: 25px;
+}
+
+.gambar img:hover {
+  cursor: pointer;
+  opacity: 0.8;
+  transform: scale(0.9);
+  transition: all 1s;
+}
+
+.gambarx {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translateZ(20px);
+}
+
+.gambarx img {
+  width: 60%;
+  transform-style: preserve-3d;
+  transform: perspective(300px);
+}
+
+.gambarx p {
+  margin-bottom: 25px;
+}
+
+.gambarx img:hover {
+  cursor: pointer;
+  opacity: 0.8;
+  transform: scale(0.9);
+  transition: all 1s;
+}
+
+.project p {
+  font-size: 1.5rem;
+  color: var(--thirdColor);
+  text-align: center;
+}
+
+.skill h1 {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  font-size: 3rem;
+  text-align: center;
+  color: var(--thirdColor);
+}
+
+.skills {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.skills img {
+  width: 100px;
+  height: 100px;
+  margin: 20px 35px;
+}
+
+.skills .gambar3 img {
+  width: 100px;
+  height: 95px;
+}
+
+.skills p {
+  font-size: 1.5rem;
+  color: var(--thirdColor);
+  text-align: center;
+}
+
+.tool h1 {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  font-size: 3rem;
+  text-align: center;
+  color: var(--thirdColor);
+}
+
+.tools {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tools img {
+  width: 200px;
+  height: 200px;
+  margin: 10px 25px;
+}
+
+.tools p {
+  font-size: 1.5rem;
+  color: var(--thirdColor);
+  text-align: center;
+}
+
+.waves {
+  position: relative;
+  width: 100%;
+  height: 25vh;
+}
+
+.content {
+  position: relative;
+  height: 20vh;
+  text-align: center;
+  background-color: white;
+}
+
+.parallax > use {
+  animation: gerak 25s cubic-bezier(0.55, 0.5, 0.45, 0.5) infinite;
+}
+.parallax > use:nth-child(1) {
+  animation-delay: -2s;
+  animation-duration: 7s;
+}
+.parallax > use:nth-child(2) {
+  animation-delay: -3s;
+  animation-duration: 10s;
+}
+.parallax > use:nth-child(3) {
+  animation-delay: -4s;
+  animation-duration: 13s;
+}
+.parallax > use:nth-child(4) {
+  animation-delay: -5s;
+  animation-duration: 20s;
+}
+
+@keyframes gerak {
+  0% {
+    transform: translate3d(-90px, 0, 0);
+  }
+  100% {
+    transform: translate3d(85px, 0, 0);
+  }
+}
+
+@media (max-width: 768px) {
+  .waves {
+    height: 40px;
+    min-height: 40px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .jumbo img {
+    border-radius: 50%;
+    width: 20vh;
+    margin: 0px auto;
+  }
+  .caption h1 {
+    color: var(--thirdColor);
+    text-align: center;
+    margin-top: 9px;
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  .caption p {
+    color: white;
+    text-align: center;
+    font-size: 12px;
+  }
+  .project h1 {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    font-size: 1.2rem;
+    text-align: center;
+    color: var(--thirdColor);
+  }
+  .gambar img {
+    width: 90%;
+    gap: 5px;
+  }
+  .gambarx img {
+    width: 90%;
+    gap: 5px;
+  }
+  .project p {
+    text-align: center;
+    font-size: 15px;
+  }
+  .skills img {
+    width: 75px;
+    height: 75px;
+    margin: 0;
+  }
+  .skills .gambar3 img {
+    width: 75px;
+    height: 65px;
+  }
+}
